@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
     <Style>
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-        body{
+
+        body {
             font-family: "IBM Plex Serif", serif;
             font-optical-sizing: auto;
+            margin: 0px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            /* background-color: gainsboro; */
+            border-bottom: 1px solid #c1c1c1;
+        }
+
+        .content {
+            /* background: yellow; */
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 70px;
+            border-bottom: 5px solid #ce7c7c;
+            border-radius: 20px;
+            padding: 5px;
+
+        }
+
+        .content ul {
+            display: flex;
+            list-style-type: none;
+
+        }
+
+        .content li {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .content a {
+            border-bottom: 3px solid #ce7c7c;
+            border-radius: 20px;
+            text-decoration: none;
+            padding: 5px 6px;
+            text-transform: uppercase;
+        }
+
+        .content a:hover {
+            color: #d06868;
+            background-color: rgb(227, 198, 198);
+            border-top: 1px solid #ce7c7c;
         }
     </Style>
 </head>
+
 <body>
     <nav>
         <div class="content">
-            <div class="logo"><h2>logo</h2></div>
+            <div class="logo">
+                <img src="images/pass.PNG" alt="logo">
+            </div>
             <ul>
-                <li><a href="#">home</a></li>
-                 <li><a href="#">Product</a></li>
-                  <li><a href="#">Services</a></li>
-                   <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Get Help</a></li>
-                     <li><a href="#">Team</a></li>
-
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Get Help</a></li>
+                <li><a href="#">Team</a></li>
             </ul>
 
         </div>
     </nav>
-    
+
 </body>
+
 </html>
