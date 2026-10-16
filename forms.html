@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Basic&family=Fleur+De+Leah&family=Lavishly+Yours&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #faebd7;
+            font-family: "Merriweather", serif;
+        }
+        form{
+            width: 28%;
+            border: 1px solid blue;
+            border-radius: 20px;
+            padding: 20px;
+            margin: auto;
+        }
+        .full-width{
+            width: 100%;
+            padding: 10px;box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+      <label for="Full_Name">Name:</label>
+      <input class="full-width"  type="text" required id="Full_Name" placeholder="Jane Doe">
+      
+      <br>
+      <label for="email">Email:</label>
+      <input   type="email" class="full-width"  required id="email" placeholder="janedoe@gmail.com">
+      <br>
+      <label for="password">password:</label>
+      <input type="password" class="full-width" required id="pass" placeholder="***">
+      <br>
+      <label for="Wight">Weight:</label>
+      <input type="number" class="full-width" required id="Weight" placeholder="Weight in Kgs" min="30" max="300" step="0.01">
+      
+      <br>
+      <Label for="DOB">Date Of Birth</Label>
+      <input type="date" id="DOB" min="1940-01-01" max="2008-12-31">
+      <br>
+      <input type="radio" id="M" name="gender">
+      <Label for="M">Male</Label>
+      <br>
+      <input type="radio" id="F" name="gender">
+      <Label for="F">Female</Label>
+
+      <p>My Favorite Food is:</p>
+      
+    <input type="checkbox" id="F" name="food">
+      <Label for="F">pizza</Label>
+      <br>
+    <input type="checkbox" id="g" name="food">
+      <Label for="F">ugali</Label>
+      <br>
+    <input type="checkbox" id="h" name="food">
+      <Label for="F">Githeri</Label>
+<br>
+    <p>Which County Do You Come From?</p>
+     <select>
+        <option value="1">Nakuru</option>
+        <option value="2">Baringo</option>
+        <option value="3">Marakwet</option>
+        <option value="4">Uasin Gishu</option>
+        <option value="5">Nandi</option>
+     </select>
+     <br>
+
+     <!-- slider-->
+
+      <button>submit</button>
+    
+
+    </form>
+</body>
+</html>
